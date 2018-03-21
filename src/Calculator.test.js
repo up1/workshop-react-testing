@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Calculator from './Calculator';
+import { shallow } from 'enzyme';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Calculator />, div);
-  ReactDOM.unmountComponentAtNode(div);
+it('Should display TODO NEXT', () => {
+  const wrapper = shallow(<Calculator />);
+  expect(wrapper.find('div').text()).toEqual('TODO NEXT');
 });
