@@ -14,6 +14,11 @@ class Calculator extends Component {
         </form>
     );
   }
+
+  plus(firstValue, secondValue) {
+    return firstValue + secondValue
+  }
+
 }
 
 export default Calculator;

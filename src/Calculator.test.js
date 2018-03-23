@@ -11,3 +11,10 @@ it('Should display calculator page correctly', () => {
   expect(form.find('button').length).toBe(4)
   expect(form.find('p.result').length).toBe(1)
 });
+
+it('Should return the correct from plus', () => {
+  const calculator = new Calculator()
+
+  const result = calculator.plus(1, 2)
+  expect(result).toEqual(3)
+});
