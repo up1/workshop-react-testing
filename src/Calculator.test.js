@@ -16,8 +16,8 @@ it('Should display result for plus correctly', () => {
   const calculator = mount(<Calculator />)
   // กำหนดค่า 1 และ 2
   const form = calculator.find('form')
-  form.childAt(0).instance().value = 1;
-  form.childAt(1).instance().value = 2;
+  form.childAt(0).instance().value = 1
+  form.childAt(1).instance().value = 2
   // กดปุ่มบวก
   form.find('button.plus').simulate('click')
   // ผลการบวกต้องเป็น 3
